@@ -4,7 +4,8 @@
   "description": ",-----.,--.                  ,--. ,---.   ,--.,------.  ,------.     '  .--./|  | ,---. ,--.,--. ,-|  || o   \\  |  ||  .-.  \\ |  .---'     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \\  :|  `--,      '  '--'\\|  |' '-' ''  ''  '\\ `-' | .'  /   |  ||  '--'  /|  `---.      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'     -----------------------------------------------------------------",
   "main": "server/index.js",
   "scripts": {
-    "start": "babel-node --presets es2015 ./server/index.js",
+    "start": "nodemon ./server.js",
+    "es6Start": "babel-node --presets es2015 ./server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "dskoda1",
@@ -26,6 +27,7 @@
     "express": "^4.13.4",
     "jquery": "^2.2.0",
     "mongoose": "^4.4.3",
+    "morgan": "^1.6.1",
     "nodemon": "^1.8.1",
     "underscore": "^1.8.3"
   }
